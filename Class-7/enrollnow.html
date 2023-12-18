@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+       <style>
+    body {
+        background-image: url('your_background_image_url_here');
+        background-size: cover;
+        margin-left: 100px;
+    }
+    .container {
+        width: 300px;
+        padding: 16px;
+        background-color: white;
+        margin: 0 auto;
+        margin-top: 200px;
+        border-radius: 4px;
+        margin-bottom: 60px;
+        margin-left: 800px;
+    }
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+    button {
+        background-color: rgb(42, 42, 212);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    button:hover {
+        opacity: 0.8;
+    }
+    #header{
+        margin-top: -80px;
+    }
+    .hong, .pong{
+        margin-top: 30px
+    }
+    .pong{
+        margin-bottom: 20px;
+    }
+    .youn{
+        font-family:  "Poppins",sans-serif;
+    }
+    .hong{
+        margin-top: 40px;
+    }
+    .uwu{
+        position: absolute;
+        margin-top: -525px;
+        margin-left: 70px;
+       
+        height: 500px;
+    }
+</style>
+</head>
+<body>
+   
+   
+
+
+<div class="container">
+    <h1 class="youn"> Welcome Back </h1>
+    <div class="hong">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="uname" required>
+</div>
+<div class="pong">
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="psw" required>
+</div>
+    <button type="submit" onclick="validate()">Login</button>
+</div>
+
+<img src="Screenshot 2023-12-11 170535.png" class="uwu">
+
+
+<script>
+    function validate() {
+        var username = document.getElementById("uname").value;
+        var password = document.getElementById("psw").value;
+        if (username == "" || password == "") {
+            alert("Username and Password must be filled out");
+            return false;
+        }
+        alert("Login successful");
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
